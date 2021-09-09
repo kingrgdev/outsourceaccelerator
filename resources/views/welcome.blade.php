@@ -22,8 +22,8 @@
         <link rel="stylesheet" href="{{ url('css/app.css') }}">
         <link rel="stylesheet" href="{{ url('js/app.js') }}">
     </head>
-    <body style="background: url('{{asset("images/photo.jpg")}}'); background-size: cover; background-position:top center; background-repeat: no-repeat;">
-        <div class="right-background" style="overflow-y: auto; padding: 0px 0px !important; margin: 0px 0px !important; width:60%; height: 100vh; clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%); background-color:#fff;">
+    <body style="background: url('{{asset("images/photo.jpg")}}'); background-size: contain; background-position: top right; background-repeat: no-repeat;">
+        <div class="right-background" style="overflow-y: auto; padding: 0px 0px !important; margin: 0px 0px !important; width:60%; height: 100vh; clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%); background-color:#fff;">
 
         
             @include('layouts.header')
@@ -45,6 +45,7 @@
                                     </div>
 
                                     
+                                    
                             </div>
                             <div class="column">
                                 
@@ -55,6 +56,16 @@
                 </div>
             </div>
         </div>
-        
+     <script>
+        function clickNav() {
+            var x = document.getElementById("mobile-dropdown");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+            x.style.transition = "all 2s";
+          }
+     </script>
     </body>
 </html>

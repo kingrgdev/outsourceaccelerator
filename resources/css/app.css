@@ -2,8 +2,12 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color:#fff;
     margin: 0;
-  padding: 0;
-  height: 100%;
+    padding: 0;
+    height: 100vh;
+  
+}
+html {
+    height: 100%;
 }
 .header {
     width: 100%;
@@ -21,6 +25,9 @@ body {
 .banner-item ul li {
     display: inline;
     margin:25px 25px;
+}
+.middle-inline {
+    display: inline;
 }
 .banner {
     margin-left:100px;
@@ -63,6 +70,7 @@ body {
 .blue {
     color:#0058ff;
 }
+
 .btn {
     padding: 20px 70px;
     border-radius: 5px;
@@ -78,6 +86,67 @@ body {
 .btn-content-section{
     margin-top:1.5em;
 }
+
+.mid-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+.mid-column {
+display: flex;
+flex-direction: column;
+flex-basis: 100%;
+flex: 1;
+}
+.mobile{
+    display:none;
+}
+
+.mobile-menu {
+    background-color:#0058ff;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 15px;
+    width: 50px;
+    top:4%;
+    right:5%;
+    position:fixed;
+    z-index:999999;
+}
+.mobile-dropdown{
+    display:none;
+    height: 100px;
+    background-color:#fff;
+
+}
+
+.mobile-navbar {
+    list-style-type:none;
+}
+.mobile-nav-item {
+    margin-top: 25px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .main-content p {
+        max-width: 400px;
+        width: 100%;
+        transition: width 2s;
+    }
+    .btn {
+        padding: 20px 30px;
+        transition: padding 2s;
+    }
+    .right-background {
+        background-size:cover!important;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    
+}
 @media only screen and (max-width: 1100px) {
     .banner-item ul {
         display:none;
@@ -86,16 +155,40 @@ body {
         margin-left:5%;
         text-align:center !important;
     }
+    .desktop {
+        display:none !important;
+    }
+    .mobile {
+        display:block !important;
+    }
 }
+
 @media only screen and (max-width: 500px) {
     .main-content label {
         font-size: 35px !important;
     }
     .btn {
         padding: 20px 30px;
+        transition: padding 2s;
+    }
+    
+    .btn-content-section{
+        margin-bottom:100px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .desktop {
+        display:none !important;
+    }
+    .mobile {
+        display:block !important;
     }
 }
 @media only screen and (max-width: 1000px) {
+    .btn {
+        padding: 20px 30px;
+        transition: padding 2s;
+    }
     .main-content label {
         font-size: 50px !important;
     }
@@ -103,7 +196,8 @@ body {
         display:none;
     }
     .banner {
-        margin-left:5%;
+        margin-left:-15% !important;
+
         text-align:center !important;
     }
     .right-background {
@@ -114,6 +208,7 @@ body {
     .main-content p {
         color:#6b7280;
         max-width: 400px;
+        width: padding 2s;
         width: 100%;
     }
 }
