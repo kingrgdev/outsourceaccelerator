@@ -15,7 +15,7 @@ Reference : https://www.positronx.io/how-to-get-location-information-with-ip-add
 6. Enter to gitbash : php artisan serve
 7. Enter to browser ( Frontend Cut Page ): http://127.0.0.1:8000/
 Frontend Screenshot : https://prntscr.com/1rmk93m
-
+8. Branch "main"
 
 #### API REQUEST ####
 
