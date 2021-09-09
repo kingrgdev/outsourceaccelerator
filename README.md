@@ -4,6 +4,7 @@
 
 Laravel 8
 PHP 7.4
+XAMPP
 
 1. git clone https://github.com/kingrgdev/outsourceaccelerator.git
 2. Create Database : lr_oaccelerator_dv
@@ -11,7 +12,7 @@ PHP 7.4
 4. Enter to gitbash IP Address package: composer require stevebauman/location
 Reference : https://www.positronx.io/how-to-get-location-information-with-ip-address-in-laravel/
 5. Enter to gitbash : php artisan migrate
-6. Enter to gitbash : php artisan server
+6. Enter to gitbash : php artisan serve
 7. Enter to browser ( Frontend Cut Page ): http://127.0.0.1:8000/
 Frontend Screenshot : https://prntscr.com/1rmk93m
 
