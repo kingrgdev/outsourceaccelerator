@@ -1,6 +1,10 @@
 ####  EXAM SETUP PROCEDURE ####
 #### Author: Richard Guevara ####
 
+
+Laravel 8
+PHP 7.4
+
 1. git clone https://github.com/kingrgdev/outsourceaccelerator.git
 2. Create Database : lr_oaccelerator_dv
 3. composer install
