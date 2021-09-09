@@ -22,31 +22,37 @@
         <link rel="stylesheet" href="{{ url('css/app.css') }}">
         <link rel="stylesheet" href="{{ url('js/app.js') }}">
     </head>
-    <body>
-        @include('layouts.header')
+    <body style="background: url('{{asset("images/photo.jpg")}}'); background-size: cover; background-position:top center; background-repeat: no-repeat;">
+        <div class="right-background" style="overflow-y: auto; padding: 0px 0px !important; margin: 0px 0px !important; width:60%; height: 100vh; clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%); background-color:#fff;">
 
-        <div class="body-background">
-            <div class="main-content">
-                <div class="row">
-                    <div class="column">
-                        <label>Data to enrich your <br>
-                            <span class="blue">offshore business</span></label>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                                  and scrambled it to make a type specimen book. </p>
+        
+            @include('layouts.header')
 
-                            <div class="btn-content-section">
-                                <button class="btn btn--primary">Get Started</button>
-                                <button class="btn btn--default blue">View recent leads</button>
+            <div class="body-background" >
+                <div class="clip-background">
+                    <div class="main-content">
+                        <div class="row">
+                            <div class="column">
+                                <label>Data to enrich your <br>
+                                    <span class="blue">Offshore business</span></label>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                        standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                        and scrambled it to make a type specimen book. </p>
+
+                                    <div class="btn-content-section">
+                                        <button type="button" class="btn btn--primary" >Get Started</button>
+                                        <button type="button" class="btn btn--default blue">View recent leads</button>
+                                    </div>
+
+                                    
                             </div>
-
-                            
-                    </div>
-                    <div class="column">
+                            <div class="column">
+                                
+                            </div>
+                        </div>
                         
                     </div>
                 </div>
-                
             </div>
         </div>
         

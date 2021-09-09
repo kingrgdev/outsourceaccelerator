@@ -1,26 +1,19 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color:#fff;
+    margin: 0;
+  padding: 0;
+  height: 100%;
 }
 .header {
     width: 100%;
     height: 100px;
-    background-color:#fff;
+    background-color:transparent;
     margin: 0 0;
     line-height:100px;
     color: #6b7280;
 }
-.body-background::before {
-    position: absolute;
-  left:0;
-  top: 20px;
-  content: "";
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  background: lightblue;
-  transform: skew(50deg);
-}
+
 .banner-item ul {
     list-style-type:none;
     margin-top:-3px;
@@ -49,7 +42,7 @@ body {
     display:none;
 }
 .main-content {
-    margin-top:8%;
+    margin-top:15%;
     margin-left:5%;
 }
 .nav-item {
@@ -59,7 +52,7 @@ body {
     height: 100px !important;
 }
 .main-content label {
-    font-size: 70px;
+    font-size: calc(16px + 3.3vw);
     font-weight:800;
 }
 .main-content p {
@@ -75,7 +68,8 @@ body {
     border-radius: 5px;
     border: none;
     font-size:16px;
-    
+    box-shadow:  0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
+    margin-right:5px;
 }
 .btn--primary {
     background-color:#0058ff;
@@ -84,12 +78,42 @@ body {
 .btn-content-section{
     margin-top:1.5em;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1100px) {
     .banner-item ul {
         display:none;
     }
     .banner {
         margin-left:5%;
         text-align:center !important;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .main-content label {
+        font-size: 35px !important;
+    }
+    .btn {
+        padding: 20px 30px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .main-content label {
+        font-size: 50px !important;
+    }
+    .banner-item ul {
+        display:none;
+    }
+    .banner {
+        margin-left:5%;
+        text-align:center !important;
+    }
+    .right-background {
+        height: 100vh !important;
+        width: 100%!important;
+        clip-path: none !important;
+    }
+    .main-content p {
+        color:#6b7280;
+        max-width: 400px;
+        width: 100%;
     }
 }
